@@ -19,7 +19,7 @@
   <run_depend version_gte="0.5">jackal_description</run_depend>
 
   <export>
-    <gazebo_ros plugin_path="${prefix}/lib" gazebo_media_path="${prefix}" gazebo_model_path="${prefix}/jackal_world/models" />
+    <gazebo_ros plugin_path="${prefix}/lib" gazebo_media_path="${prefix}" gazebo_model_path="${prefix}/models" />
   </export>
 
 </package>
