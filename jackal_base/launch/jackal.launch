@@ -31,7 +31,7 @@
   
   <!-- View in RVIZ. -->
   <group if="$(arg rviz)">
-    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find jackal_world)/rviz/jackal.rviz" >
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find jackal_base)/rviz/jackal.rviz" >
     </node>
   </group>
 
