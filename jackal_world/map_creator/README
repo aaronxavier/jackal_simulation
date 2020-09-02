@@ -1,3 +1,0 @@
-#For this to work you have to adjust to export the path of the jackal_world package similiar to this:
-
-export GAZEBO_MODEL_PATH=~/catkin_ws/src/jackal_simulation_rob/jackal_world//models:${GAZEBO_MODEL_PATH}
