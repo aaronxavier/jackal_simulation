@@ -289,35 +289,35 @@
       		<geometry>
         		<box size="0.14 0.14 0.005"/>
       		</geometry>
-      		<material name="white"/>
+          <material name="dark_grey" />
     	</visual>
 	<visual>
       		<origin rpy="0 0 0" xyz="0.06 0.06 -0.04"/>
       		<geometry>
         		<cylinder length="0.07" radius="0.005"/>
       		</geometry>
-      		<material name="white"/>
+          <material name="dark_grey" />
     	</visual>
    	<visual>
       		<origin rpy="0 0 0" xyz="-0.06 0.06 -0.04"/>
       		<geometry>
         		<cylinder length="0.07" radius="0.005"/>
       		</geometry>
-      		<material name="white"/>
+          <material name="dark_grey" />
     	</visual>
 	<visual>
       		<origin rpy="0 0 0" xyz="0.06 -0.06 -0.04"/>
       		<geometry>
         		<cylinder length="0.07" radius="0.005"/>
       		</geometry>
-      		<material name="white"/>
+          <material name="dark_grey" />
     	</visual>
 	<visual>
       		<origin rpy="0 0 0" xyz="-0.06 -0.06 -0.04"/>
       		<geometry>
         		<cylinder length="0.07" radius="0.005"/>
       		</geometry>
-      		<material name="white"/>
+          <material name="dark_grey" />
     	</visual>
 	 <collision>
       		<origin xyz="0 0 0"/>
