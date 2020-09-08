@@ -333,9 +333,9 @@
       <origin xyz="0.0665 0 0.145"/>
   </joint>
   <xacro:include filename="$(find jackal_description)/urdf/OS1-64.urdf.xacro"/>
-  <OS1-64 parent="lidar_mounting_frame" name="os1-64">
+  <xacro:OS1-64 parent="lidar_mounting_frame" name="os1-64">
     <origin xyz="0 0 0.035" rpy="0 0 0" />
-  </OS1-64>
+  </xacro:OS1-64>
 
 
   <!-- Bring in simulation data for Gazebo. -->

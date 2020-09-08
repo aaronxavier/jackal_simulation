@@ -12,8 +12,10 @@
       max_x: 10.0
       min_y: -10.0
       max_y: 10.0
-      min_z: -0.32
-      max_z: 0.112
+      min_z: -0.6
+      max_z: 0.3
+      <!-- true: no points in the box, false: no points outside the box -->
+      negative: true
     </rosparam>
   </node>
 
@@ -31,6 +33,4 @@
     </rosparam>
   </node> -->
 
-  <!-- custom node to filter out groundplane -->
-  <!-- <node pkg="jackal_exploration" type="conical_filter" name="conical_filter" output="screen" /> -->
 </launch>
