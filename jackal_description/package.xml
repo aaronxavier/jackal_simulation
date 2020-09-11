@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <package>
   <name>jackal_description</name>
-  <version>0.7.0</version>
-  <description>URDF robot description for Jackal</description>
+  <version>0.1.0</version>
+  <description>URDF robot description for Jackal modified for ROB at University of Luebeck</description>
 
-  <maintainer email="mpurvis@clearpathrobotics.com">Mike Purvis</maintainer>
+  <maintainer email="schilling@rob.uni-luebeck.de">Lars Schilling</maintainer>
 
   <license>BSD</license>
 
