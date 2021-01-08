@@ -2,11 +2,16 @@
 
 Simulation for the Jackal robots at the University of Luebeck
 
-## 1. Install ROS kinetic
-Follow: http://wiki.ros.org/kinetic/Installation/Ubuntu
+## 1. Install ROS kinetic or melodic
+For kinetic follow: http://wiki.ros.org/kinetic/Installation/Ubuntu
+For meldoic follow: http://wiki.ros.org/melodic/Installation/Ubuntu
 ## 2. Install additional Jackal packages
 ```
 sudo apt-get install ros-kinetic-jackal-simulator ros-kinetic-jackal-desktop ros-kinetic-jackal-navigation
+```
+or
+```
+sudo apt-get install ros-melodic-jackal-simulator ros-melodic-jackal-desktop ros-melodic-jackal-navigation
 ```
 
 ## 3. Create catkin workspace
