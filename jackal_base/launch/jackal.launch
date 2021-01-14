@@ -4,13 +4,14 @@
   <arg name="gui"       default="true"/>
   <arg name="rviz"      default="true"/>
   <arg name="config"    default="base" />
-  <!-- <arg name="world"     default="$(find jackal_world)/worlds/plant_row.world"/> -->
+  <!-- <arg name="world"     default="$(find jackal_world)/worlds/easy_terrain.world"/> -->
   <arg name="world"     default="$(find jackal_gazebo)/worlds/jackal_race.world"/>
 
 
 
   <!-- Start Gazebo. -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="verbose" value="true" />
     <arg name="use_sim_time" value="true"/>
     <arg name="gui"          value="$(arg gui)"/>
     <arg name="world_name"   value="$(arg world)"/>
@@ -29,7 +30,7 @@
 
   <!-- Spawn Jackal -->
   <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model"
-	      args="-urdf -model jackal -param robot_description -x -5 -y -1 -z 1.0" />
+	      args="-urdf -model jackal -param robot_description -x 0 -y 0 -z 0" />
   
   <!-- View in RVIZ. -->
   <group if="$(arg rviz)">
