@@ -1,4 +1,4 @@
-image: /home/lars/field.pgm
+image: /home/lars/catkin_ws/src/jackal_simulation_rob/field_map/field.pgm
 resolution: 0.020000
 origin: [-10.000000, -10.000000, 0.000000]
 negate: 0

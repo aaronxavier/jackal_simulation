@@ -4,9 +4,9 @@
   <arg name="gui"       default="true"/>
   <arg name="rviz"      default="true"/>
   <arg name="config"    default="base" />
+  <!-- <arg name="world"     default="$(find jackal_world)/worlds/dense_field.world"/> -->
+  <!-- <arg name="world"     default="$(find jackal_world)/worlds/plant_row.world"/> -->
   <arg name="world"     default="$(find jackal_gazebo)/worlds/jackal_race.world"/>
-  <!-- <arg name="world" default="$(find moose_gazebo)/worlds/rescue.world" /> -->
-
 
 
   <!-- Start Gazebo. -->
@@ -30,12 +30,17 @@
 
   <!-- Spawn Jackal -->
   <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model"
-	      args="-urdf -model jackal -param robot_description -x 0 -y 0 -z 0" />
+	      args="-urdf -model jackal -param robot_description -x 0 -y -5 -z 0" />
   
   <!-- View in RVIZ. -->
   <group if="$(arg rviz)">
     <node name="rviz" pkg="rviz" type="rviz" args="-d $(find jackal_base)/rviz/jackal.rviz" >
     </node>
   </group>
+
+  <include file="$(find jackal_base)/launch/add_launch/point2laser.launch" />
+  <include file="$(find jackal_base)/launch/add_launch/gmapping.launch" />
+  <include file="$(find jackal_base)/launch/add_launch/move_base.launch" />
+
 
 </launch>
