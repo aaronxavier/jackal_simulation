@@ -3,7 +3,7 @@
 <launch>
   <arg name="gui"       default="true"/>
   <arg name="rviz"      default="true"/>
-  <arg name="config"    default="base" />
+  <arg name="config"    default="ouster" />
   <!-- <arg name="world"     default="$(find jackal_world)/worlds/dense_field.world"/> -->
   <!-- <arg name="world"     default="$(find jackal_world)/worlds/plant_row.world"/> -->
   <arg name="world"     default="$(find jackal_gazebo)/worlds/jackal_race.world"/>
