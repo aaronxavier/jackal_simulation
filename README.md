@@ -38,11 +38,15 @@ catkin_make
 
 If needed source your workspace (in your catkin_ws: source devel/setup.bash)
 
-## 6. Run simulation
+## 6. Running simulation
 ```
 roslaunch jackal_base jackal.launch
 ```
 
-
+## 7. Using the camera
 ZED Camera currently not supported in Gazebo.
 For a quick fix you can change the argument config in the file jackal_base/launch/jackal.launch to "front_bumblebee2"
+The Bumblebee2 camera is a stereo camera similiar to the ZED camera. To get a 3D point cloud, open another terminal and type the follwing command:
+```
+ROS_NAMESPACE=front rosrun stereo_image_proc stereo_image_proc
+```
