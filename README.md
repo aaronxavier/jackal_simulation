@@ -13,6 +13,9 @@ or
 ```
 sudo apt-get install ros-melodic-jackal-simulator ros-melodic-jackal-desktop ros-melodic-jackal-navigation
 ```
+or
+```
+sudo apt-get install ros-noetic-jackal-simulator ros-noetic-jackal-desktop ros-noetic-jackal-navigation
 
 ## 3. Create catkin workspace
 In your home folder open a terminal and create your workspace:
@@ -26,7 +29,7 @@ cd src
 ## 4. Clone repos
 Clone following repos into your src folder
 ```
-git clone https://github.com/l-schilling/jackal_simulation_rob.git
+git clone https://github.com/aaronxavier/jackal_simulation.git
 git clone https://github.com/wilselby/ouster_example
 ```
 
